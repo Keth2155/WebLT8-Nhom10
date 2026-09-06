@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu nhóm - Nhóm 10</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: #f0f4f8; }
+        .header {
+            background: linear-gradient(135deg, #0B3D91, #1565C0);
+            color: white; text-align: center; padding: 50px 20px;
+        }
+        .header h1 { font-size: 2.2em; }
+        .header p { margin-top: 10px; font-size: 1.05em; opacity: 0.95; }
+        .container { max-width: 900px; margin: 0 auto; padding: 30px 20px; }
+        .section-title {
+            text-align: center; color: #0B3D91;
+            font-size: 1.4em; margin: 30px 0 20px;
+        }
+        /* Danh sách ul li yêu cầu đề bài */
+        .member-list {
+            background: white; border-radius: 12px; padding: 20px 30px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08); max-width: 600px; margin: 0 auto 25px;
+        }
+        .member-list ul { margin-left: 18px; line-height: 1.9; color: #333; }
+        .members {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px; margin: 20px 0;
+        }
+        .member-card {
+            background: white; border-radius: 12px;
+            padding: 25px 15px; text-align: center;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+        }
+        .member-card img {
+            width: 90px; height: 90px; border-radius: 50%;
+            object-fit: cover; border: 3px solid #0B3D91;
+        }
+        .member-card h3 { margin: 10px 0 5px; color: #0B3D91; }
+        .role {
+            background: #e3f2fd; color: #0B3D91;
+            padding: 2px 10px; border-radius: 10px; font-size: 0.8em;
+        }
+        .member-card a { color: #0B3D91; font-size: 0.85em; }
+        table {
+            width: 100%; border-collapse: collapse;
+            background: white; border-radius: 12px;
+            overflow: hidden; box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+        }
+        th { background: #0B3D91; color: white; padding: 12px; }
+        td { padding: 10px 12px; border-bottom: 1px solid #eee; }
+        .form-box {
+            background: white; padding: 30px; border-radius: 12px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1); max-width: 450px; margin: 0 auto;
+        }
+        .form-box label { display: block; font-weight: bold; color: #0B3D91; margin-bottom: 5px; }
+        .form-box input[type="text"],
+        .form-box input[type="email"] {
+            width: 100%; padding: 10px; margin-bottom: 15px;
+            border: 2px solid #e0e0e0; border-radius: 8px;
+        }
+        .form-box input[type="submit"] {
+            width: 100%; background: #0B3D91; color: white;
+            padding: 10px; border: none; border-radius: 8px;
+            font-size: 1em; cursor: pointer;
+        }
+        .form-box input[type="submit"]:hover { background: #082d6b; }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Nhóm 10 - WebLT8</h1>
+    <p>Nhóm sinh viên lớp CSE703064-1-1-26(COUR06.LT8) - Đại học Phenikaa. Cùng nhau học tập, chia sẻ và hoàn thiện kỹ năng lập trình Web cơ bản với HTML/CSS.</p>
+</div>
+
+<div class="container">
+
+    <h2 class="section-title">Danh sách thành viên</h2>
+    <div class="member-list">
+        <ul>
+            <li>Lê Minh Đức - MSSV: 24100393 - Trưởng nhóm</li>
+            <li>Nguyễn Văn An - MSSV: 23010906 - Thành viên</li>
+            <li>Nguyễn Thị Nhật Anh - MSSV: 24108673 - Thành viên</li>
+            <li>Trần Văn Nhật Duy - MSSV: 24108647 - Thành viên</li>
+        </ul>
+    </div>
+
+    <h2 class="section-title">Thông tin chi tiết thành viên</h2>
+    <div class="members">
+        <div class="member-card">
+            <img src="../../LeMinhDuc/avatar.jpg" alt="Ảnh đại diện Lê Minh Đức">
+            <h3>Lê Minh Đức</h3>
+            <p>MSSV: 24100393 - Trưởng nhóm</p>
+            <p>Phụ trách thiết kế giao diện và quản lý source code.</p>
+            <a href="../../LeMinhDuc/index.html">Xem trang cá nhân</a>
+        </div>
+        <div class="member-card">
+            <img src="../../NguyenVanAn/avatar.jpg" alt="Ảnh đại diện Nguyễn Văn An">
+            <h3>Nguyễn Văn An</h3>
+            <p>MSSV: 23010906 - Thành viên</p>
+            <p>Phụ trách nội dung và kiểm thử giao diện.</p>
+            <a href="../../NguyenVanAn/index.html">Xem trang cá nhân</a>
+        </div>
+        <div class="member-card">
+            <img src="../../nguyenthinhatanh/avatar.jpg" alt="Ảnh đại diện Nguyễn Thị Nhật Anh">
+            <h3>Nguyễn Thị Nhật Anh</h3>
+            <p>MSSV: 24108673 - Thành viên</p>
+            <p>Phụ trách tổng hợp thông tin và hình ảnh.</p>
+            <a href="../../nguyenthinhatanh/index.html">Xem trang cá nhân</a>
+        </div>
+        <div class="member-card">
+            <img src="../../TranVanNhatDuy/avatar.jpg" alt="Ảnh đại diện Trần Văn Nhật Duy">
+            <h3>Trần Văn Nhật Duy</h3>
+            <p>MSSV: 24108647 - Thành viên</p>
+            <p>Phụ trách form liên hệ và QA.</p>
+            <a href="../../TranVanNhatDuy/index.html">Xem trang cá nhân</a>
+        </div>
+    </div>
+
+    <h2 class="section-title">Bảng phân công công việc</h2>
+    <table>
+        <thead>
+            <tr><th>STT</th><th>Tên thành viên</th><th>MSSV</th><th>Nhiệm vụ phụ trách</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Lê Minh Đức</td>
+                <td>24100393</td>
+                <td>Trưởng nhóm: thiết kế giao diện, tạo about.html, merge code</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Nguyễn Văn An</td>
+                <td>23010906</td>
+                <td>Viết nội dung giới thiệu nhóm, hỗ trợ CSS</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Nguyễn Thị Nhật Anh</td>
+                <td>24108673</td>
+                <td>Tổng hợp thông tin, chuẩn bị ảnh đại diện</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Trần Văn Nhật Duy</td>
+                <td>24108647</td>
+                <td>Tạo form liên hệ, kiểm tra lỗi và responsive</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2 class="section-title">Liên hệ với nhóm</h2>
+    <div class="form-box">
+        <form action="#" method="post">
+            <label for="name">Họ và tên:</label>
+            <input type="text" id="name" name="name" placeholder="Nhập họ tên..." required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Nhập email..." required>
+
+            <input type="submit" value="Gửi liên hệ">
+        </form>
+    </div>
+
+</div>
+</body>
+</html>
